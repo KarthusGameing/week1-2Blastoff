@@ -4,27 +4,33 @@
 
 <html>
 <head>
-<title>Countdown</title>
+<script src="code.js"></script>
+<title>UAT Space Program</title>
+
 </head>
 
 <body>
-<!--Sets variable for timer countdown to 10-->
-<script>var countdown = 10</script>
+<img src="UATspaceLogo-2.jpg">
+<p>
+Test of the document write function
+</p>
 
-<script>var BlastoffTimer = setInterval(function(){
-<!--If time hits 0, change to say Blastoff!-->
-  if(countdown <= 0){
-    clearInterval(BlastoffTimer);
-    document.getElementById("DisplayCountdown").innerHTML = "Blastoff!";
-  } else {
-  <!--Tells timer to count down by 1 if timer is above 0-->
-    document.getElementById("DisplayCountdown").innerHTML = countdown;
-  }
-  countdown -= 1;
-}, 1000);
-</script>
+<p>
+Test of the paragraph tags
+</p>
+<h2> Countdown Timer </h2>
+<div id="DisplayCountdown"></div><br>
+<br>
+<button onclick="start();">Start</button>
+<button>Stop</button>
 
-<div id="DisplayCountdown"></div>
+
+
+
 </body>
+
+
+
+
 
 </html>
