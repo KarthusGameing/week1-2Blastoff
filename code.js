@@ -1,15 +1,66 @@
-<!--Sets variable for timer countdown to 10-->
-<script>var countdown = 10</script>
-
-<script>var BlastoffTimer = setInterval(function(){
-<!--If time hits 0, change to say Blastoff!-->
-  if(countdown <= 0){
-    clearInterval(BlastoffTimer);
-    document.getElementById("DisplayCountdown").innerHTML = "Blastoff!";
-  } else {
-  <!--Tells timer to count down by 1 if timer is above 0-->
-    document.getElementById("DisplayCountdown").innerHTML = countdown;
-  }
-  countdown -= 1;
-}, 1000);
-</script>
+function start(){
+	console.log("start() function started");
+	var currTime = 10;
+	console.log(currTime);
+	document.getElementById("countdownStatus").innerHTML = currTime;
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 1000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 2000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 3000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 4000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 5000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 6000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 7000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 8000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = currTime;
+		console.log(currTime);
+	}, 9000)
+	
+	setTimeout(function(){
+		currTime = currTime - 1;
+		document.getElementById("countdownStatus").innerHTML = "Blastoff!";
+		console.log(currTime);
+	}, 10000)
+}
